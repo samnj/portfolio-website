@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
+  },
+  "author": "Samir Najul",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.1.7",
+    "tailwindcss": "^3.0.18"
+  }
+}

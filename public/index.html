@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" type="module"></script>
+  </head>
+
+  <body class="bg-background text-primary font-fira px-2">
+    <div class="relative mx-auto max-w-md">
+      <div
+        class="bg-background fixed top-0 left-0 right-0 z-10 mx-auto px-2 drop-shadow-md"
+      >
+        <nav class="my-4 mx-auto max-w-md">
+          <ul class="nav-list flex items-center justify-around text-base">
+            <li class="hover:font-bold">
+              <a href="#home">Home</a>
+            </li>
+            <li class="hover:font-bold">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="hover:font-bold">
+              <a href="#about">About</a>
+            </li>
+            <li class="hover:font-bold">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <header
+        id="home"
+        class="section mx-auto flex h-screen w-80 flex-col items-center justify-center"
+      >
+        <h1 class="absolute top-32 text-4xl">Samir Najul</h1>
+        <p>
+          <span class="text-secondary">sam@HAL:~$</span> cat short-intro<br />
+          Hi there. I'm a full-stack web dev who’s into math and programming.
+          Keeping it simple, responsive and functional.<br />
+          <span class="flex items-center gap-2">
+            <span class="text-secondary">sam@HAL:~$</span>
+            <span class="bg-primary display: inline-block h-4 w-2.5"></span>
+          </span>
+        </p>
+        <a class="absolute right-0 top-[90vh]" href="#projects">
+          <svg
+            class="fill-primary hover:fill-primary-hover h-8 w-8"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-17 1h4v-8h2v8h4l-5 6-5-6z"
+            />
+          </svg>
+        </a>
+      </header>
+
+      <main>
+        <section
+          id="projects"
+          class="section mx-auto flex w-80 flex-col items-center justify-center gap-11 pt-20"
+        >
+          <h1 class="text-3xl">Projects</h1>
+          <div class="mt-6 flex flex-col gap-3">
+            <p>
+              short description of the project, basic functionality and stuff
+            </p>
+            <p class="font-titillium text-secondary">
+              react redux tailwindcss express mongodb
+            </p>
+            <div class="flex w-64 gap-5">
+              <a href="">
+                <span class="flex items-center gap-1">
+                  <svg
+                    class="fill-primary h-6 w-[1.688rem]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"
+                    />
+                  </svg>
+                  <span>code</span>
+                </span>
+              </a>
+
+              <a href="">
+                <span class="flex items-center gap-1">
+                  <svg
+                    class="fill-primary h-5 w-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
+                    />
+                  </svg>
+                  <span>live preview</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <p>
+              short description of the project, basic functionality and stuff
+            </p>
+            <p class="font-titillium text-secondary">
+              react redux tailwindcss express mongodb
+            </p>
+            <div class="flex w-64 gap-5">
+              <a href="">
+                <span class="flex items-center gap-1">
+                  <svg
+                    class="fill-primary h-6 w-[1.688rem]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"
+                    />
+                  </svg>
+                  <span>code</span>
+                </span>
+              </a>
+
+              <a href="">
+                <span class="flex items-center gap-1">
+                  <svg
+                    class="fill-primary h-5 w-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
+                    />
+                  </svg>
+                  <span>live preview</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <p>
+              short description of the project, basic functionality and stuff
+            </p>
+            <p class="font-titillium text-secondary">
+              react redux tailwindcss express mongodb
+            </p>
+            <div class="flex w-64 gap-5">
+              <a href="">
+                <span class="flex items-center gap-1">
+                  <svg
+                    class="fill-primary h-6 w-[1.688rem]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"
+                    />
+                  </svg>
+                  <span>code</span>
+                </span>
+              </a>
+
+              <a href="">
+                <span class="flex items-center gap-1">
+                  <svg
+                    class="fill-primary h-5 w-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
+                    />
+                  </svg>
+                  <span>live preview</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="about"
+          class="section mx-auto mt-20 flex w-80 flex-col items-center justify-center gap-11 pt-20"
+        >
+          <h1 class="text-3xl">About</h1>
+          <div>
+            <p>
+              I’m Sam, a 31-year-old man from Argentina, and that’s my catified
+              rubber duck.
+            </p>
+            <br />
+            <p>
+              I’m a self-taught developer. Halfway through my math degree I
+              completed Harvard’s
+              <a href=""
+                ><span class="text-secondary">CS50</span>
+                <svg
+                  class="fill-secondary ml-[-5px] mr-[5px] inline-block h-2 w-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
+                  /></svg></a
+              >. After reading The C Programming Language by K&R, I knew I had
+              found my vocation in computer science.
+            </p>
+            <br />
+            <p>
+              Having decided to pursue a career in web development,
+
+              <a href=""
+                ><span class="text-secondary">Full Stack Open</span>
+                <svg
+                  class="fill-secondary ml-[-5px] mr-[5px] inline-block h-2 w-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
+                  /></svg></a
+              >by the University of Helsinki was the next step. I found both the
+              flexibility and potential of the web fascinating, and that’s how I
+              got here.
+            </p>
+            <br />
+            <p>Before all that, I worked as Software QA and NOC operator.</p>
+          </div>
+          <div class="mt-10 flex flex-col items-center gap-4">
+            <h2 class="">Technologies I use</h2>
+            <ul class="font-titillium text-secondary columns-3">
+              <li>html</li>
+              <li>nodejs</li>
+              <li>git</li>
+              <li>css</li>
+              <li>express</li>
+              <li>github</li>
+              <li>javascript</li>
+              <li>mysql</li>
+              <li>linux</li>
+              <li>react</li>
+              <li>mongodb</li>
+              <li>figma</li>
+              <li>redux</li>
+              <li>jest</li>
+              <li>docker</li>
+              <li>tailwindcss</li>
+            </ul>
+          </div>
+        </section>
+
+        <section
+          id="contact"
+          class="section mx-auto flex h-screen w-80 flex-col items-center justify-center gap-6"
+        >
+          <h1 class="text-4xl font-medium">Get in touch!</h1>
+          <address class="font-titillium text-secondary text-2xl">
+            <a href="mailto:sam@gmail.com">sam.nj7@gmail.com</a>
+          </address>
+          <div class="flex items-center gap-4">
+            <a href="https://github.com/samnj">
+              <svg
+                class="fill-primary hover:fill-primary-hover h-8 w-8"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+
+            <a href="">
+              <svg
+                class="fill-primary hover:fill-primary-hover h-8 w-8"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer class="font-titillium mb-4 text-center">
+        <small>&copy; 2022 Samir Najul</small>
+      </footer>
+    </div>
+  </body>
+</html>
