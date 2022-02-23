@@ -11,7 +11,8 @@ module.exports = {
         'primary': '#A9A9B3',
         'primary-hover': '#B3B9C9',
         'secondary': '#09D9BD',
-        'highlight': '#C043BB'
+        'highlight': '#C043BB',
+        'footer': '#1B1C1D'
       },
     },
   },

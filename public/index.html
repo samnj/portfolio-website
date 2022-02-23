@@ -22,9 +22,9 @@
       <div
         class="bg-background fixed top-0 left-0 right-0 z-10 mx-auto px-2 drop-shadow-md"
       >
-        <nav class="my-4 mx-auto max-w-md lg:my-8 lg:max-w-2xl">
+        <nav class="my-4 mx-auto max-w-md lg:my-4 lg:max-w-2xl">
           <ul
-            class="nav-list flex items-center justify-around text-base lg:text-3xl"
+            class="nav-list flex items-center justify-around text-base lg:justify-center lg:gap-10 lg:text-xl"
           >
             <li class="text-highlight hover:font-bold">
               <a href="#home">Home</a>
@@ -44,7 +44,7 @@
 
       <header
         id="home"
-        class="relative mx-auto flex h-screen w-80 flex-col items-center justify-center pt-14 lg:w-[56rem]"
+        class="relative mx-auto flex h-screen w-80 flex-col items-center justify-center pt-14 lg:w-[50rem]"
       >
         <div class="flex grow-[2] items-center justify-center">
           <h1 data-name="home" class="intersection text-4xl lg:text-6xl">
@@ -53,7 +53,7 @@
         </div>
 
         <div
-          class="flex w-80 grow-[3] items-start justify-center lg:w-[31rem] lg:text-2xl"
+          class="flex w-[22rem] grow-[3] items-start justify-center lg:w-[28rem] lg:text-xl"
         >
           <p>
             <span class="text-secondary">sam@HAL:~$</span> cat short-intro<br />
@@ -62,14 +62,14 @@
             <span class="flex items-center gap-2">
               <span class="text-secondary">sam@HAL:~$</span>
               <span
-                class="bg-primary display: inline-block h-4 w-2.5 lg:h-6 lg:w-3.5"
+                class="bg-primary display: inline-block h-4 w-2.5 lg:h-5 lg:w-3"
               ></span>
             </span>
           </p>
         </div>
-        <a class="absolute right-1 top-[85vh]" href="#projects">
+        <a class="absolute right-1 top-[85vh] lg:right-20" href="#projects">
           <svg
-            class="fill-primary hover:fill-primary-hover h-8 w-8 lg:h-14 lg:w-14"
+            class="fill-primary hover:fill-primary-hover h-8 w-8 lg:h-12 lg:w-12"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -83,129 +83,183 @@
       <main>
         <section
           id="projects"
-          class="mx-auto flex w-80 flex-col items-center justify-center gap-11 pt-20 lg:w-[50rem] lg:pt-40"
+          class="mx-auto flex w-80 flex-col items-center justify-center gap-11 pt-20 lg:w-[50rem] lg:gap-0 lg:pt-32"
         >
-          <h1 data-name="projects" class="intersection text-3xl lg:text-6xl">
+          <h1 data-name="projects" class="intersection text-3xl lg:text-5xl">
             Projects
           </h1>
-          <div class="flex flex-col gap-3 pt-6">
-            <p>
-              short description of the project, basic functionality and stuff
-            </p>
-            <p class="font-titillium text-secondary">
-              react redux tailwindcss express mongodb
-            </p>
-            <div class="flex w-64 gap-5">
-              <a href="">
-                <span class="flex items-center gap-1">
-                  <svg
-                    class="fill-primary h-6 w-[1.688rem]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"
-                    />
-                  </svg>
-                  <span>code</span>
-                </span>
-              </a>
 
-              <a href="">
-                <span class="flex items-center gap-1">
-                  <svg
-                    class="fill-primary h-5 w-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
-                    />
-                  </svg>
-                  <span>live preview</span>
-                </span>
-              </a>
+          <div class="flex flex-col gap-3 pt-6 lg:flex-row lg:gap-0 lg:pt-32">
+            <div class="flex flex-col gap-3 lg:order-2 lg:w-[25rem] lg:gap-0">
+              <div class="flex items-center lg:h-48 lg:px-3">
+                <p class="lg:text-xl">
+                  short description of the project, basic functionality and
+                  stuff
+                </p>
+              </div>
+              <div class="flex items-center lg:h-16 lg:pl-3">
+                <p
+                  class="font-titillium text-secondary lg:text-lg lg:tracking-wide"
+                >
+                  react redux tailwindcss express mongodb
+                </p>
+              </div>
             </div>
-            <img />
-          </div>
-
-          <div class="flex flex-col gap-3">
-            <p>
-              short description of the project, basic functionality and stuff
-            </p>
-            <p class="font-titillium text-secondary">
-              react redux tailwindcss express mongodb
-            </p>
-            <div class="flex w-64 gap-5">
-              <a href="">
-                <span class="flex items-center gap-1">
-                  <svg
-                    class="fill-primary h-6 w-[1.688rem]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"
-                    />
-                  </svg>
-                  <span>code</span>
-                </span>
-              </a>
-
-              <a href="">
-                <span class="flex items-center gap-1">
-                  <svg
-                    class="fill-primary h-5 w-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
-                    />
-                  </svg>
-                  <span>live preview</span>
-                </span>
-              </a>
+            <div
+              class="flex w-64 justify-center gap-5 lg:w-[25rem] lg:flex-col lg:gap-0"
+            >
+              <img
+                class="hidden h-48 w-[25rem] lg:block"
+                src="./img/project_placeholder.png"
+              />
+              <div
+                class="lg:bg-footer flex items-center gap-6 lg:h-16 lg:justify-center lg:text-lg"
+              >
+                <a href="">
+                  <span class="flex items-center gap-1 lg:gap-2">
+                    <svg
+                      class="fill-primary h-6 w-6 lg:h-8 lg:w-8"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"
+                      />
+                    </svg>
+                    <span>code</span>
+                  </span>
+                </a>
+                <a href="">
+                  <span class="flex items-center gap-1 lg:gap-2">
+                    <svg
+                      class="fill-primary h-4 w-4 lg:h-6 lg:w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
+                      />
+                    </svg>
+                    <span>live preview</span>
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
 
-          <div class="flex flex-col gap-3">
-            <p>
-              short description of the project, basic functionality and stuff
-            </p>
-            <p class="font-titillium text-secondary">
-              react redux tailwindcss express mongodb
-            </p>
-            <div class="flex w-64 gap-5">
-              <a href="">
-                <span class="flex items-center gap-1">
-                  <svg
-                    class="fill-primary h-6 w-[1.688rem]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"
-                    />
-                  </svg>
-                  <span>code</span>
-                </span>
-              </a>
+          <div class="flex flex-col gap-3 pt-6 lg:flex-row lg:gap-0 lg:pt-0">
+            <div class="flex flex-col gap-3 lg:w-[25rem] lg:gap-0">
+              <div class="flex items-center lg:h-48 lg:px-3">
+                <p class="lg:text-xl">
+                  short description of the project, basic functionality and
+                  stuff
+                </p>
+              </div>
+              <div class="flex items-center lg:h-16 lg:pl-3">
+                <p
+                  class="font-titillium text-secondary lg:text-lg lg:tracking-wide"
+                >
+                  react redux tailwindcss express mongodb
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex w-64 justify-center gap-5 lg:order-2 lg:w-[25rem] lg:flex-col lg:gap-0"
+            >
+              <img
+                class="hidden h-48 w-[25rem] lg:block"
+                src="./img/project_placeholder.png"
+              />
+              <div
+                class="lg:bg-footer flex items-center gap-6 lg:h-16 lg:justify-center lg:text-lg"
+              >
+                <a href="">
+                  <span class="flex items-center gap-1 lg:gap-2">
+                    <svg
+                      class="fill-primary h-6 w-6 lg:h-8 lg:w-8"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"
+                      />
+                    </svg>
+                    <span>code</span>
+                  </span>
+                </a>
+                <a href="">
+                  <span class="flex items-center gap-1 lg:gap-2">
+                    <svg
+                      class="fill-primary h-4 w-4 lg:h-6 lg:w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
+                      />
+                    </svg>
+                    <span>live preview</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
 
-              <a href="">
-                <span class="flex items-center gap-1">
-                  <svg
-                    class="fill-primary h-5 w-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
-                    />
-                  </svg>
-                  <span>live preview</span>
-                </span>
-              </a>
+          <div class="flex flex-col gap-3 pt-6 lg:flex-row lg:gap-0 lg:pt-0">
+            <div class="flex flex-col gap-3 lg:order-2 lg:w-[25rem] lg:gap-0">
+              <div class="flex items-center lg:h-48 lg:px-3">
+                <p class="lg:text-xl">
+                  short description of the project, basic functionality and
+                  stuff
+                </p>
+              </div>
+              <div class="flex items-center lg:h-16 lg:pl-3">
+                <p
+                  class="font-titillium text-secondary lg:text-lg lg:tracking-wide"
+                >
+                  react redux tailwindcss express mongodb
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex w-64 justify-center gap-5 lg:w-[25rem] lg:flex-col lg:gap-0"
+            >
+              <img
+                class="hidden h-48 w-[25rem] lg:block"
+                src="./img/project_placeholder.png"
+              />
+              <div
+                class="lg:bg-footer flex items-center gap-6 lg:h-16 lg:justify-center lg:text-lg"
+              >
+                <a href="">
+                  <span class="flex items-center gap-1 lg:gap-2">
+                    <svg
+                      class="fill-primary h-6 w-6 lg:h-8 lg:w-8"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"
+                      />
+                    </svg>
+                    <span>code</span>
+                  </span>
+                </a>
+                <a href="">
+                  <span class="flex items-center gap-1 lg:gap-2">
+                    <svg
+                      class="fill-primary h-4 w-4 lg:h-6 lg:w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
+                      />
+                    </svg>
+                    <span>live preview</span>
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </section>
