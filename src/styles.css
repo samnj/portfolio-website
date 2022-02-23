@@ -2,7 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.caja {
+.caja1 {
   border-width: 1px;
   border-color: pink;
+}
+
+.caja2 {
+  border-width: 1px;
+  border-color: blue;
+}
+
+.caja3 {
+  border-width: 1px;
+  border-color: yellow;
+}
+.caja4 {
+  border-width: 1px;
+  border-color: red;
+}
+.caja5 {
+  border-width: 1px;
+  border-color: green;
 }

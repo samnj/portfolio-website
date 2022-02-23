@@ -18,12 +18,14 @@
   </head>
 
   <body class="bg-background text-primary font-fira px-2">
-    <div class="relative mx-auto max-w-md">
+    <div class="relative mx-auto w-80 lg:w-full">
       <div
         class="bg-background fixed top-0 left-0 right-0 z-10 mx-auto px-2 drop-shadow-md"
       >
-        <nav class="my-4 mx-auto max-w-md">
-          <ul class="nav-list flex items-center justify-around text-base">
+        <nav class="my-4 mx-auto max-w-md lg:my-8 lg:max-w-2xl">
+          <ul
+            class="nav-list flex items-center justify-around text-base lg:text-3xl"
+          >
             <li class="text-highlight hover:font-bold">
               <a href="#home">Home</a>
             </li>
@@ -42,21 +44,32 @@
 
       <header
         id="home"
-        class="section mx-auto flex h-screen w-80 flex-col items-center justify-center"
+        class="relative mx-auto flex h-screen w-80 flex-col items-center justify-center pt-14 lg:w-[56rem]"
       >
-        <h1 class="absolute top-32 text-4xl">Samir Najul</h1>
-        <p>
-          <span class="text-secondary">sam@HAL:~$</span> cat short-intro<br />
-          Hi there. I'm a full-stack web dev who’s into math and programming.
-          Keeping it simple, responsive and functional.<br />
-          <span class="flex items-center gap-2">
-            <span class="text-secondary">sam@HAL:~$</span>
-            <span class="bg-primary display: inline-block h-4 w-2.5"></span>
-          </span>
-        </p>
+        <div class="flex grow-[2] items-center justify-center">
+          <h1 data-name="home" class="intersection text-4xl lg:text-6xl">
+            Samir Najul
+          </h1>
+        </div>
+
+        <div
+          class="flex w-80 grow-[3] items-start justify-center lg:w-[31rem] lg:text-2xl"
+        >
+          <p>
+            <span class="text-secondary">sam@HAL:~$</span> cat short-intro<br />
+            Hi there. I'm a full-stack web dev who’s into math and programming.
+            Keeping it simple, responsive and functional.<br />
+            <span class="flex items-center gap-2">
+              <span class="text-secondary">sam@HAL:~$</span>
+              <span
+                class="bg-primary display: inline-block h-4 w-2.5 lg:h-6 lg:w-3.5"
+              ></span>
+            </span>
+          </p>
+        </div>
         <a class="absolute right-1 top-[85vh]" href="#projects">
           <svg
-            class="fill-primary hover:fill-primary-hover h-8 w-8"
+            class="fill-primary hover:fill-primary-hover h-8 w-8 lg:h-14 lg:w-14"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -70,10 +83,12 @@
       <main>
         <section
           id="projects"
-          class="section mx-auto flex w-80 flex-col items-center justify-center gap-11 pt-20"
+          class="mx-auto flex w-80 flex-col items-center justify-center gap-11 pt-20 lg:w-[50rem] lg:pt-40"
         >
-          <h1 class="text-3xl">Projects</h1>
-          <div class="mt-6 flex flex-col gap-3">
+          <h1 data-name="projects" class="intersection text-3xl lg:text-6xl">
+            Projects
+          </h1>
+          <div class="flex flex-col gap-3 pt-6">
             <p>
               short description of the project, basic functionality and stuff
             </p>
@@ -111,6 +126,7 @@
                 </span>
               </a>
             </div>
+            <img />
           </div>
 
           <div class="flex flex-col gap-3">
@@ -196,10 +212,11 @@
 
         <section
           id="about"
-          class="section mx-auto mt-20 flex w-80 flex-col items-center justify-center gap-11 pt-20"
+          class="mx-auto flex w-80 flex-col items-center justify-center gap-11 pt-40"
         >
-          <h1 class="text-3xl">About</h1>
-          <div class="mt-6">
+          <h1 data-name="about" class="intersection text-3xl">About</h1>
+          <img class="h-28 w-28 rounded-sm" src="./img/izumi.png" />
+          <div class="">
             <p>
               I’m Sam, a 31-year-old man from Argentina, and that’s my catified
               rubber duck.
@@ -208,7 +225,7 @@
             <p>
               I’m a self-taught developer. Halfway through my math degree I
               completed Harvard’s
-              <a href=""
+              <a href="https://cs50.harvard.edu/college/2022/spring/"
                 ><span class="text-secondary">CS50</span>
                 <svg
                   class="fill-secondary ml-[-5px] mr-[5px] inline-block h-2 w-2"
@@ -225,7 +242,7 @@
             <p>
               Having decided to pursue a career in web development,
 
-              <a href=""
+              <a href="https://fullstackopen.com/en/about"
                 ><span class="text-secondary">Full Stack Open</span>
                 <svg
                   class="fill-secondary ml-[-5px] mr-[5px] inline-block h-2 w-2"
@@ -267,11 +284,13 @@
 
         <section
           id="contact"
-          class="section mx-auto flex h-screen w-80 flex-col items-center justify-center gap-6"
+          class="mx-auto flex h-screen w-80 flex-col items-center justify-center gap-6"
         >
-          <h1 class="text-4xl font-medium">Get in touch!</h1>
+          <h1 data-name="contact" class="intersection text-4xl font-medium">
+            Get in touch!
+          </h1>
           <address class="font-titillium text-secondary text-2xl">
-            <a href="mailto:sam@gmail.com">sam.nj7@gmail.com</a>
+            <a href="mailto:sam.nj7@gmail.com">sam.nj7@gmail.com</a>
           </address>
           <div class="flex items-center gap-4">
             <a href="https://github.com/samnj">
