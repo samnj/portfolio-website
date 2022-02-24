@@ -500,6 +500,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 85vh;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -512,11 +516,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .ml-\[-5px\] {
@@ -547,18 +546,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.aspect-\[3\/2\] {
-  aspect-ratio: 3 / 2;
-}
-
-.aspect-\[3\/3\] {
-  aspect-ratio: 3 / 3;
-}
-
-.aspect-\[1\/1\] {
-  aspect-ratio: 1 / 1;
-}
-
 .h-screen {
   height: 100vh;
 }
@@ -571,20 +558,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
-.h-36 {
-  height: 9rem;
-}
-
-.h-12 {
-  height: 3rem;
+.h-48 {
+  height: 12rem;
 }
 
 .h-6 {
   height: 1.5rem;
-}
-
-.h-5 {
-  height: 1.25rem;
 }
 
 .h-28 {
@@ -595,20 +574,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 0.5rem;
 }
 
-.h-48 {
-  height: 12rem;
+.h-36 {
+  height: 9rem;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
-.h-7 {
-  height: 1.75rem;
+.h-40 {
+  height: 10rem;
 }
 
 .w-80 {
   width: 20rem;
+}
+
+.w-\[22rem\] {
+  width: 22rem;
 }
 
 .w-2\.5 {
@@ -631,22 +610,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 25rem;
 }
 
-.w-\[1\.688rem\] {
-  width: 1.688rem;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-7 {
-  width: 1.75rem;
-}
-
 .w-6 {
   width: 1.5rem;
 }
@@ -655,16 +618,48 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1rem;
 }
 
-.w-96 {
-  width: 24rem;
+.w-28 {
+  width: 7rem;
 }
 
-.w-\[22rem\] {
-  width: 22rem;
+.w-48 {
+  width: 12rem;
+}
+
+.w-\[19rem\] {
+  width: 19rem;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
+}
+
+.w-\[21rem\] {
+  width: 21rem;
+}
+
+.min-w-\[20rem\] {
+  min-width: 20rem;
 }
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-\[20rem\] {
+  max-width: 20rem;
+}
+
+.max-w-\[19rem\] {
+  max-width: 19rem;
+}
+
+.max-w-\[18rem\] {
+  max-width: 18rem;
+}
+
+.max-w-\[21rem\] {
+  max-width: 21rem;
 }
 
 .grow-\[2\] {
@@ -678,6 +673,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .columns-3 {
   -moz-columns: 3;
        columns: 3;
+}
+
+.columns-lg {
+  -moz-columns: 32rem;
+       columns: 32rem;
 }
 
 .flex-col {
@@ -716,16 +716,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.25rem;
 }
 
-.gap-1 {
-  gap: 0.25rem;
-}
-
 .gap-6 {
   gap: 1.5rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .scroll-smooth {
@@ -734,6 +738,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-sm {
   border-radius: 0.125rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .bg-background {
@@ -775,12 +783,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 10rem;
 }
 
-.text-center {
-  text-align: center;
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
-.text-right {
-  text-align: right;
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-fira {
@@ -869,31 +881,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
-  .lg\:right-10 {
-    right: 2.5rem;
-  }
-
   .lg\:right-20 {
     right: 5rem;
+  }
+
+  .lg\:right-0 {
+    right: 0px;
+  }
+
+  .lg\:right-5 {
+    right: 1.25rem;
   }
 
   .lg\:order-2 {
     order: 2;
   }
 
-  .lg\:my-8 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .lg\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .lg\:my-6 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+  .lg\:order-1 {
+    order: 1;
   }
 
   .lg\:my-4 {
@@ -901,28 +906,36 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 1rem;
   }
 
+  .lg\:ml-3 {
+    margin-left: 0.75rem;
+  }
+
+  .lg\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .lg\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
   .lg\:block {
     display: block;
   }
 
-  .lg\:h-6 {
-    height: 1.5rem;
+  .lg\:flex {
+    display: flex;
   }
 
-  .lg\:h-14 {
-    height: 3.5rem;
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:h-5 {
+    height: 1.25rem;
   }
 
   .lg\:h-12 {
     height: 3rem;
-  }
-
-  .lg\:h-3 {
-    height: 0.75rem;
-  }
-
-  .lg\:h-36 {
-    height: 9rem;
   }
 
   .lg\:h-48 {
@@ -937,46 +950,52 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 2rem;
   }
 
-  .lg\:h-5 {
-    height: 1.25rem;
+  .lg\:h-6 {
+    height: 1.5rem;
+  }
+
+  .lg\:h-10 {
+    height: 2.5rem;
+  }
+
+  .lg\:h-14 {
+    height: 3.5rem;
+  }
+
+  .lg\:h-40 {
+    height: 10rem;
+  }
+
+  .lg\:h-7 {
+    height: 1.75rem;
+  }
+
+  .lg\:h-9 {
+    height: 2.25rem;
   }
 
   .lg\:w-full {
     width: 100%;
   }
 
-  .lg\:w-\[56rem\] {
-    width: 56rem;
+  .lg\:w-\[50rem\] {
+    width: 50rem;
   }
 
-  .lg\:w-\[31rem\] {
-    width: 31rem;
-  }
-
-  .lg\:w-3\.5 {
-    width: 0.875rem;
+  .lg\:w-\[28rem\] {
+    width: 28rem;
   }
 
   .lg\:w-3 {
     width: 0.75rem;
   }
 
-  .lg\:w-14 {
-    width: 3.5rem;
-  }
-
-  .lg\:w-\[50rem\] {
-    width: 50rem;
+  .lg\:w-12 {
+    width: 3rem;
   }
 
   .lg\:w-\[25rem\] {
     width: 25rem;
-  }
-
-  .lg\:w-fit {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
   }
 
   .lg\:w-8 {
@@ -987,20 +1006,154 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 1.5rem;
   }
 
-  .lg\:w-12 {
-    width: 3rem;
+  .lg\:w-\[27rem\] {
+    width: 27rem;
   }
 
-  .lg\:w-\[28rem\] {
-    width: 28rem;
+  .lg\:w-\[26rem\] {
+    width: 26rem;
+  }
+
+  .lg\:w-10 {
+    width: 2.5rem;
+  }
+
+  .lg\:w-\[24rem\] {
+    width: 24rem;
+  }
+
+  .lg\:w-\[23rem\] {
+    width: 23rem;
+  }
+
+  .lg\:w-\[22rem\] {
+    width: 22rem;
+  }
+
+  .lg\:w-7 {
+    width: 1.75rem;
+  }
+
+  .lg\:w-5 {
+    width: 1.25rem;
+  }
+
+  .lg\:w-40 {
+    width: 10rem;
   }
 
   .lg\:w-96 {
     width: 24rem;
   }
 
+  .lg\:w-\[24\.5rem\] {
+    width: 24.5rem;
+  }
+
+  .lg\:w-\[24\.3rem\] {
+    width: 24.3rem;
+  }
+
+  .lg\:w-\[24\.2em\] {
+    width: 24.2em;
+  }
+
+  .lg\:w-\[24\.1em\] {
+    width: 24.1em;
+  }
+
+  .lg\:w-\[24em\] {
+    width: 24em;
+  }
+
+  .lg\:w-\[24\.2rem\] {
+    width: 24.2rem;
+  }
+
+  .lg\:w-\[24\.25rem\] {
+    width: 24.25rem;
+  }
+
+  .lg\:w-\[24\.23rem\] {
+    width: 24.23rem;
+  }
+
+  .lg\:w-\[24\.22rem\] {
+    width: 24.22rem;
+  }
+
+  .lg\:w-\[24\.21rem\] {
+    width: 24.21rem;
+  }
+
+  .lg\:w-\[24\.20rem\] {
+    width: 24.20rem;
+  }
+
+  .lg\:w-\[24\.26rem\] {
+    width: 24.26rem;
+  }
+
+  .lg\:w-\[24\.29rem\] {
+    width: 24.29rem;
+  }
+
+  .lg\:w-fit {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .lg\:w-9 {
+    width: 2.25rem;
+  }
+
+  .lg\:w-\[30rem\] {
+    width: 30rem;
+  }
+
+  .lg\:w-\[33rem\] {
+    width: 33rem;
+  }
+
+  .lg\:w-\[36rem\] {
+    width: 36rem;
+  }
+
+  .lg\:w-\[20rem\] {
+    width: 20rem;
+  }
+
   .lg\:max-w-2xl {
     max-width: 42rem;
+  }
+
+  .lg\:max-w-xl {
+    max-width: 36rem;
+  }
+
+  .lg\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .lg\:max-w-md {
+    max-width: 28rem;
+  }
+
+  .lg\:max-w-full {
+    max-width: 100%;
+  }
+
+  .lg\:max-w-\[24rem\] {
+    max-width: 24rem;
+  }
+
+  .lg\:max-w-\[50rem\] {
+    max-width: 50rem;
+  }
+
+  .lg\:max-w-\[24\.5rem\] {
+    max-width: 24.5rem;
   }
 
   .lg\:flex-row {
@@ -1011,32 +1164,52 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: column;
   }
 
+  .lg\:items-center {
+    align-items: center;
+  }
+
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:justify-around {
+    justify-content: space-around;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
   }
 
   .lg\:gap-0 {
     gap: 0px;
   }
 
-  .lg\:gap-4 {
-    gap: 1rem;
-  }
-
-  .lg\:gap-6 {
-    gap: 1.5rem;
-  }
-
   .lg\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .lg\:gap-16 {
+    gap: 4rem;
+  }
+
+  .lg\:gap-20 {
+    gap: 5rem;
+  }
+
+  .lg\:gap-12 {
+    gap: 3rem;
+  }
+
+  .lg\:gap-24 {
+    gap: 6rem;
   }
 
   .lg\:gap-8 {
     gap: 2rem;
   }
 
-  .lg\:gap-10 {
-    gap: 2.5rem;
+  .lg\:gap-6 {
+    gap: 1.5rem;
   }
 
   .lg\:bg-footer {
@@ -1044,73 +1217,37 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-color: rgb(27 28 29 / var(--tw-bg-opacity));
   }
 
-  .lg\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
   .lg\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-  }
-
-  .lg\:pt-40 {
-    padding-top: 10rem;
-  }
-
-  .lg\:pt-0 {
-    padding-top: 0px;
-  }
-
-  .lg\:pl-3 {
-    padding-left: 0.75rem;
-  }
-
-  .lg\:pl-4 {
-    padding-left: 1rem;
-  }
-
-  .lg\:pl-5 {
-    padding-left: 1.25rem;
-  }
-
-  .lg\:pt-5 {
-    padding-top: 1.25rem;
-  }
-
-  .lg\:pt-12 {
-    padding-top: 3rem;
-  }
-
-  .lg\:pt-16 {
-    padding-top: 4rem;
   }
 
   .lg\:pt-32 {
     padding-top: 8rem;
   }
 
-  .lg\:pr-3 {
-    padding-right: 0.75rem;
+  .lg\:pl-3 {
+    padding-left: 0.75rem;
   }
 
-  .lg\:text-center {
-    text-align: center;
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
 
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .lg\:pt-28 {
+    padding-top: 7rem;
   }
 
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+  .lg\:pt-14 {
+    padding-top: 3.5rem;
   }
 
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .lg\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .lg\:pt-20 {
+    padding-top: 5rem;
   }
 
   .lg\:text-xl {
@@ -1118,14 +1255,29 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.75rem;
   }
 
-  .lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:tracking-wide {

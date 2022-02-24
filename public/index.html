@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samir Najul - Full-Stack Web Dev</title>
     <link href="./styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,12 +18,12 @@
     <script src="main.js" type="module" async></script>
   </head>
 
-  <body class="bg-background text-primary font-fira px-2">
-    <div class="relative mx-auto w-80 lg:w-full">
+  <body class="bg-background text-primary font-fira">
+    <div class="mx-auto">
       <div
         class="bg-background fixed top-0 left-0 right-0 z-10 mx-auto px-2 drop-shadow-md"
       >
-        <nav class="my-4 mx-auto max-w-md lg:my-4 lg:max-w-2xl">
+        <nav class="my-4 mx-auto max-w-md">
           <ul
             class="nav-list flex items-center justify-around text-base lg:justify-center lg:gap-10 lg:text-xl"
           >
@@ -44,16 +45,16 @@
 
       <header
         id="home"
-        class="relative mx-auto flex h-screen w-80 flex-col items-center justify-center pt-14 lg:w-[50rem]"
+        class="relative mx-auto flex h-screen max-w-md flex-col items-center justify-center pt-14 lg:max-w-md"
       >
         <div class="flex grow-[2] items-center justify-center">
-          <h1 data-name="home" class="intersection text-4xl lg:text-6xl">
+          <h1 data-name="home" class="intersection text-4xl lg:text-5xl">
             Samir Najul
           </h1>
         </div>
 
         <div
-          class="flex w-[22rem] grow-[3] items-start justify-center lg:w-[28rem] lg:text-xl"
+          class="flex max-w-[21rem] grow-[3] items-start justify-center lg:max-w-[24rem] lg:pl-3 lg:text-lg"
         >
           <p>
             <span class="text-secondary">sam@HAL:~$</span> cat short-intro<br />
@@ -67,9 +68,13 @@
             </span>
           </p>
         </div>
-        <a class="absolute right-1 top-[85vh] lg:right-20" href="#projects">
+        <a
+          title="go to projects"
+          class="absolute right-5 top-[85vh]"
+          href="#projects"
+        >
           <svg
-            class="fill-primary hover:fill-primary-hover h-8 w-8 lg:h-12 lg:w-12"
+            class="fill-primary hover:fill-primary-hover h-8 w-8 lg:h-10 lg:w-10"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -83,21 +88,21 @@
       <main>
         <section
           id="projects"
-          class="mx-auto flex w-80 flex-col items-center justify-center gap-11 pt-20 lg:w-[50rem] lg:gap-0 lg:pt-32"
+          class="mx-auto flex max-w-[20rem] flex-col items-center justify-center gap-11 pt-20 lg:max-w-[50rem] lg:gap-0 lg:pt-28"
         >
-          <h1 data-name="projects" class="intersection text-3xl lg:text-5xl">
+          <h1 data-name="projects" class="intersection text-3xl lg:text-4xl">
             Projects
           </h1>
 
-          <div class="flex flex-col gap-3 pt-6 lg:flex-row lg:gap-0 lg:pt-32">
+          <div class="flex flex-col gap-3 pt-6 lg:flex-row lg:gap-0 lg:pt-16">
             <div class="flex flex-col gap-3 lg:order-2 lg:w-[25rem] lg:gap-0">
-              <div class="flex items-center lg:h-48 lg:px-3">
-                <p class="lg:text-xl">
+              <div class="flex items-center lg:h-40 lg:px-3">
+                <p class="lg:text-lg">
                   short description of the project, basic functionality and
                   stuff
                 </p>
               </div>
-              <div class="flex items-center lg:h-16 lg:pl-3">
+              <div class="flex items-center lg:h-12 lg:pl-3">
                 <p
                   class="font-titillium text-secondary lg:text-lg lg:tracking-wide"
                 >
@@ -109,16 +114,16 @@
               class="flex w-64 justify-center gap-5 lg:w-[25rem] lg:flex-col lg:gap-0"
             >
               <img
-                class="hidden h-48 w-[25rem] lg:block"
+                class="hidden h-40 w-[25rem] lg:block"
                 src="./img/project_placeholder.png"
               />
               <div
-                class="lg:bg-footer flex items-center gap-6 lg:h-16 lg:justify-center lg:text-lg"
+                class="lg:bg-footer flex items-center gap-6 lg:h-12 lg:justify-center lg:text-lg"
               >
                 <a href="">
                   <span class="flex items-center gap-1 lg:gap-2">
                     <svg
-                      class="fill-primary h-6 w-6 lg:h-8 lg:w-8"
+                      class="fill-primary h-6 w-6 lg:h-7 lg:w-7"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                     >
@@ -132,7 +137,7 @@
                 <a href="">
                   <span class="flex items-center gap-1 lg:gap-2">
                     <svg
-                      class="fill-primary h-4 w-4 lg:h-6 lg:w-6"
+                      class="fill-primary h-4 w-4 lg:h-5 lg:w-5"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                     >
@@ -149,13 +154,13 @@
 
           <div class="flex flex-col gap-3 pt-6 lg:flex-row lg:gap-0 lg:pt-0">
             <div class="flex flex-col gap-3 lg:w-[25rem] lg:gap-0">
-              <div class="flex items-center lg:h-48 lg:px-3">
-                <p class="lg:text-xl">
+              <div class="flex items-center lg:h-40 lg:px-3">
+                <p class="lg:text-lg">
                   short description of the project, basic functionality and
                   stuff
                 </p>
               </div>
-              <div class="flex items-center lg:h-16 lg:pl-3">
+              <div class="flex items-center lg:h-12 lg:pl-3">
                 <p
                   class="font-titillium text-secondary lg:text-lg lg:tracking-wide"
                 >
@@ -167,16 +172,16 @@
               class="flex w-64 justify-center gap-5 lg:order-2 lg:w-[25rem] lg:flex-col lg:gap-0"
             >
               <img
-                class="hidden h-48 w-[25rem] lg:block"
+                class="hidden h-40 w-[25rem] lg:block"
                 src="./img/project_placeholder.png"
               />
               <div
-                class="lg:bg-footer flex items-center gap-6 lg:h-16 lg:justify-center lg:text-lg"
+                class="lg:bg-footer flex items-center gap-6 lg:h-12 lg:justify-center lg:text-lg"
               >
                 <a href="">
                   <span class="flex items-center gap-1 lg:gap-2">
                     <svg
-                      class="fill-primary h-6 w-6 lg:h-8 lg:w-8"
+                      class="fill-primary h-6 w-6 lg:h-7 lg:w-7"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                     >
@@ -190,7 +195,7 @@
                 <a href="">
                   <span class="flex items-center gap-1 lg:gap-2">
                     <svg
-                      class="fill-primary h-4 w-4 lg:h-6 lg:w-6"
+                      class="fill-primary h-4 w-4 lg:h-5 lg:w-5"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                     >
@@ -207,13 +212,13 @@
 
           <div class="flex flex-col gap-3 pt-6 lg:flex-row lg:gap-0 lg:pt-0">
             <div class="flex flex-col gap-3 lg:order-2 lg:w-[25rem] lg:gap-0">
-              <div class="flex items-center lg:h-48 lg:px-3">
-                <p class="lg:text-xl">
+              <div class="flex items-center lg:h-40 lg:px-3">
+                <p class="lg:text-lg">
                   short description of the project, basic functionality and
                   stuff
                 </p>
               </div>
-              <div class="flex items-center lg:h-16 lg:pl-3">
+              <div class="flex items-center lg:h-12 lg:pl-3">
                 <p
                   class="font-titillium text-secondary lg:text-lg lg:tracking-wide"
                 >
@@ -225,16 +230,16 @@
               class="flex w-64 justify-center gap-5 lg:w-[25rem] lg:flex-col lg:gap-0"
             >
               <img
-                class="hidden h-48 w-[25rem] lg:block"
+                class="hidden h-40 w-[25rem] lg:block"
                 src="./img/project_placeholder.png"
               />
               <div
-                class="lg:bg-footer flex items-center gap-6 lg:h-16 lg:justify-center lg:text-lg"
+                class="lg:bg-footer flex items-center gap-6 lg:h-12 lg:justify-center lg:text-lg"
               >
                 <a href="">
                   <span class="flex items-center gap-1 lg:gap-2">
                     <svg
-                      class="fill-primary h-6 w-6 lg:h-8 lg:w-8"
+                      class="fill-primary h-6 w-6 lg:h-7 lg:w-7"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                     >
@@ -248,7 +253,7 @@
                 <a href="">
                   <span class="flex items-center gap-1 lg:gap-2">
                     <svg
-                      class="fill-primary h-4 w-4 lg:h-6 lg:w-6"
+                      class="fill-primary h-4 w-4 lg:h-5 lg:w-5"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                     >
@@ -266,90 +271,116 @@
 
         <section
           id="about"
-          class="mx-auto flex w-80 flex-col items-center justify-center gap-11 pt-40"
+          class="mx-auto flex max-w-[20rem] flex-col items-center gap-11 pt-40 lg:max-w-full"
         >
-          <h1 data-name="about" class="intersection text-3xl">About</h1>
-          <img class="h-28 w-28 rounded-sm" src="./img/izumi.png" />
-          <div class="">
-            <p>
-              I’m Sam, a 31-year-old man from Argentina, and that’s my catified
-              rubber duck.
-            </p>
-            <br />
-            <p>
-              I’m a self-taught developer. Halfway through my math degree I
-              completed Harvard’s
-              <a href="https://cs50.harvard.edu/college/2022/spring/"
-                ><span class="text-secondary">CS50</span>
-                <svg
-                  class="fill-secondary ml-[-5px] mr-[5px] inline-block h-2 w-2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
-                  /></svg></a
-              >. After reading The C Programming Language by K&R, I knew I had
-              found my vocation in computer science.
-            </p>
-            <br />
-            <p>
-              Having decided to pursue a career in web development,
+          <h1 data-name="about" class="intersection text-3xl lg:text-4xl">
+            About
+          </h1>
 
-              <a href="https://fullstackopen.com/en/about"
-                ><span class="text-secondary">Full Stack Open</span>
-                <svg
-                  class="fill-secondary ml-[-5px] mr-[5px] inline-block h-2 w-2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
+          <div
+            class="flex flex-col items-center justify-center gap-11 lg:flex-row lg:gap-8 lg:pt-16"
+          >
+            <img class="h-28 w-28 rounded-sm lg:hidden" src="./img/izumi.png" />
+            <div class="lg:order-2 lg:max-w-[24.5rem] lg:text-lg">
+              <p>
+                I’m Sam, a 31-year-old man from Argentina, and that’s my
+                catified rubber duck.
+              </p>
+              <br />
+              <p>
+                I’m a self-taught developer. Halfway through my math degree I
+                completed Harvard’s
+                <a
+                  title="CS50 website"
+                  href="https://cs50.harvard.edu/college/2022/spring/"
+                  target="_blank"
+                  ><span class="text-secondary">CS50</span>
+                  <svg
+                    class="fill-secondary ml-[-5px] mr-[5px] inline-block h-2 w-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
+                    /></svg></a
+                >. After reading The C Programming Language by K&R, I knew I had
+                found my vocation in computer science.
+              </p>
+              <br />
+              <p>
+                Having decided to pursue a career in web development,
+                <a
+                  title="FSO website"
+                  href="https://fullstackopen.com/en/about"
+                  target="_blank"
+                  ><span class="text-secondary">Full Stack Open</span>
+                  <svg
+                    class="fill-secondary ml-[-5px] mr-[5px] inline-block h-2 w-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
+                    /></svg></a
+                >by the University of Helsinki was the next step. I found both
+                the flexibility and potential of the web fascinating, and that’s
+                how I got here.
+              </p>
+              <br />
+              <p>Before all that, I worked as Software QA and NOC operator.</p>
+            </div>
+            <div
+              class="lg:order-1 lg:flex lg:w-96 lg:flex-col lg:items-center lg:gap-12"
+            >
+              <img
+                class="hidden h-48 w-48 rounded-sm lg:block"
+                src="./img/izumi.png"
+              />
+              <div class="flex flex-col lg:items-center">
+                <h2 class="mx-auto lg:text-lg">Technologies I use</h2>
+                <ul
+                  class="font-titillium text-secondary mt-6 columns-3 gap-10 lg:ml-5"
                 >
-                  <path
-                    d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"
-                  /></svg></a
-              >by the University of Helsinki was the next step. I found both the
-              flexibility and potential of the web fascinating, and that’s how I
-              got here.
-            </p>
-            <br />
-            <p>Before all that, I worked as Software QA and NOC operator.</p>
-          </div>
-          <div class="mt-6 flex flex-col items-center">
-            <h2>Technologies I use</h2>
-            <ul class="font-titillium text-secondary mt-6 columns-3">
-              <li>html</li>
-              <li>nodejs</li>
-              <li>git</li>
-              <li>css</li>
-              <li>express</li>
-              <li>github</li>
-              <li>javascript</li>
-              <li>mysql</li>
-              <li>linux</li>
-              <li>react</li>
-              <li>mongodb</li>
-              <li>figma</li>
-              <li>redux</li>
-              <li>jest</li>
-              <li>docker</li>
-              <li>tailwindcss</li>
-            </ul>
+                  <li>html</li>
+                  <li>css</li>
+                  <li>javascript</li>
+                  <li>react</li>
+                  <li>redux</li>
+                  <li>tailwindcss</li>
+                  <li>nodejs</li>
+                  <li>express</li>
+                  <li>mysql</li>
+                  <li>mongodb</li>
+                  <li>jest</li>
+                  <br />
+                  <li>git</li>
+                  <li>github</li>
+                  <li>linux</li>
+                  <li>figma</li>
+                  <li>docker</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 
         <section
           id="contact"
-          class="mx-auto flex h-screen w-80 flex-col items-center justify-center gap-6"
+          class="mx-auto flex h-screen flex-col items-center justify-center gap-6 lg:gap-8"
         >
-          <h1 data-name="contact" class="intersection text-4xl font-medium">
+          <h1
+            data-name="contact"
+            class="intersection text-4xl font-medium lg:text-5xl"
+          >
             Get in touch!
           </h1>
-          <address class="font-titillium text-secondary text-2xl">
+          <address class="font-titillium text-secondary text-2xl lg:text-3xl">
             <a href="mailto:sam.nj7@gmail.com">sam.nj7@gmail.com</a>
           </address>
-          <div class="flex items-center gap-4">
-            <a href="https://github.com/samnj">
+          <div class="flex items-center gap-4 lg:gap-6">
+            <a title="Github" href="https://github.com/samnj" target="_blank">
               <svg
-                class="fill-primary hover:fill-primary-hover h-8 w-8"
+                class="fill-primary hover:fill-primary-hover h-8 w-8 lg:h-9 lg:w-9"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -359,9 +390,13 @@
               </svg>
             </a>
 
-            <a href="">
+            <a
+              title="Linkedin"
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="_blank"
+            >
               <svg
-                class="fill-primary hover:fill-primary-hover h-8 w-8"
+                class="fill-primary hover:fill-primary-hover h-8 w-8 lg:h-9 lg:w-9"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
